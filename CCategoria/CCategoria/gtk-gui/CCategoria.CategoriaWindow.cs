@@ -14,6 +14,8 @@ namespace CCategoria
 
 		private global::Gtk.Table table1;
 
+		private global::Gtk.Entry entryNombre;
+
 		private global::Gtk.Label Nombre;
 
 		protected virtual void Build()
@@ -50,16 +52,27 @@ namespace CCategoria
 			this.table1.RowSpacing = ((uint)(6));
 			this.table1.ColumnSpacing = ((uint)(6));
 			// Container child table1.Gtk.Table+TableChild
+			this.entryNombre = new global::Gtk.Entry();
+			this.entryNombre.CanFocus = true;
+			this.entryNombre.Name = "entryNombre";
+			this.entryNombre.IsEditable = true;
+			this.entryNombre.InvisibleChar = '•';
+			this.table1.Add(this.entryNombre);
+			global::Gtk.Table.TableChild w3 = ((global::Gtk.Table.TableChild)(this.table1[this.entryNombre]));
+			w3.LeftAttach = ((uint)(1));
+			w3.RightAttach = ((uint)(2));
+			w3.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table1.Gtk.Table+TableChild
 			this.Nombre = new global::Gtk.Label();
 			this.Nombre.Name = "Nombre";
 			this.Nombre.LabelProp = global::Mono.Unix.Catalog.GetString("Nombre");
 			this.table1.Add(this.Nombre);
-			global::Gtk.Table.TableChild w3 = ((global::Gtk.Table.TableChild)(this.table1[this.Nombre]));
-			w3.XOptions = ((global::Gtk.AttachOptions)(4));
-			w3.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w4 = ((global::Gtk.Table.TableChild)(this.table1[this.Nombre]));
+			w4.XOptions = ((global::Gtk.AttachOptions)(4));
+			w4.YOptions = ((global::Gtk.AttachOptions)(4));
 			this.vbox1.Add(this.table1);
-			global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.table1]));
-			w4.Position = 1;
+			global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.table1]));
+			w5.Position = 1;
 			this.Add(this.vbox1);
 			if ((this.Child != null))
 			{
