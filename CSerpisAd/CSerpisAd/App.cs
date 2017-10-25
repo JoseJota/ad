@@ -1,7 +1,8 @@
-﻿using System;
+﻿
+using System;
 using System.Data;
 
-namespace CCategoria {
+namespace Serpis.Ad {
 	public class App {
 		private IDbConnection connection;
 		private App() {
