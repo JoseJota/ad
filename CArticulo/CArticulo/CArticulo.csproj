@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E98C53E7-A5C1-4DEB-A8B6-2683589A985E}</ProjectGuid>
+    <ProjectGuid>{7325FDB5-01D0-4808-8B74-DDC20882CF7A}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>CSerpisAd</RootNamespace>
-    <AssemblyName>CSerpisAd</AssemblyName>
+    <RootNamespace>CArticulo</RootNamespace>
+    <AssemblyName>CArticulo</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -28,20 +28,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-<Reference Include="gtk-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="CSerpisAd">
+      <HintPath>..\..\CSerpisAd\CSerpisAd\bin\Debug\CSerpisAd.dll</HintPath>
     </Reference>
-<Reference Include="glib-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-<Reference Include="System.Data" />
+    <Reference Include="System.Data" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DbCommandHelper.cs" />
-    <Compile Include="App.cs" />
-    <Compile Include="TreeViewHelper.cs" />
-    <Compile Include="WindowHelper.cs" />
+    <Compile Include="ArticuloWindow.cs" />
+    <Compile Include="MainWindow.cs" />
+    <Compile Include="Articulo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
