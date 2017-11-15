@@ -47,12 +47,12 @@
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="Mono.Posix" />
-    <Reference Include="MySql.Data">
-      <HintPath>..\..\mysql\MySql.Data.dll</HintPath>
-    </Reference>
     <Reference Include="System.Data" />
     <Reference Include="CSerpisAd">
       <HintPath>..\..\CSerpisAd\CSerpisAd\bin\Debug\CSerpisAd.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\CMySQL\CMySQL\bin\Debug\MySql.Data.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
