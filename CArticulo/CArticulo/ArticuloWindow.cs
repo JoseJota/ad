@@ -13,7 +13,7 @@ namespace CArticulo
 			this.Build();
 			entryNombre.Text = articulo.Nombre;
             spinbutton1.Value = (double)articulo.Precio;
-            combobox1.
+
 
 			saveAction.Activated += delegate {
 				articulo.Nombre = entryNombre.Text;
@@ -22,8 +22,6 @@ namespace CArticulo
 			};
 		}
 
-        protected void OnCombobox1Changed(object sender, EventArgs e)
-        {
-        }
+        
     }
 }
